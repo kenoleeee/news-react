@@ -7,10 +7,10 @@ const NewsBanner = ({ item }) => {
     return (
         <>
             <div className={styles.newsBanner}>
-                <Image image={item?.image} />
+                <Image image={item?.urlToImage} />
                 <h3 className={styles.title}>{item.title}</h3>
                 <p className={styles.extra}>
-                    {formatTimeAgo(item.published)} by {item.author}
+                    {formatTimeAgo(item.publishedAt)} by {item.author}
                 </p>
             </div>
         </>
